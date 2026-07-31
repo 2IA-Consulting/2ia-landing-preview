@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>2iA Consulting — 5 propostas de landing page</title>
+    <title>2iA Consulting — 10 propostas de landing page</title>
     <link rel="icon" href="assets/logo-laranja.webp" type="image/webp" />
     <style>
       :root {
@@ -64,6 +64,11 @@
         border-top: 1px solid var(--line);
         padding-top: 16px;
         margin: 48px 0 24px;
+      }
+      .group-note {
+        color: var(--muted);
+        max-width: 62ch;
+        margin: -8px 0 20px;
       }
       .grid {
         display: grid;
@@ -130,13 +135,15 @@
     <div class="wrap">
       <header>
         <img src="assets/logo-laranja.webp" alt="Marca 2iA Consulting" />
-        <h1>Cinco propostas de landing page</h1>
+        <h1>Dez propostas de landing page</h1>
       </header>
       <p class="sub">
-        Cinco direções de design distintas para a mesma empresa e o mesmo
-        conteúdo. Dois grupos: as duas primeiras partem do wireframe interno; as
-        três seguintes partem do conteúdo editorial, com referência visual em
-        sites de mercado.
+        Dez direções de design distintas para a mesma empresa e o mesmo
+        conteúdo, construídas em dois lotes. No primeiro (grupos A–C, agentes
+        Claude/Codex): duas partem do wireframe interno, três do conteúdo
+        editorial com referência visual em sites de mercado, uma mescla as duas
+        primeiras. No segundo (grupo D, Antigravity CLI): um par escuro/claro
+        para cada uma das duas fontes de conteúdo.
       </p>
 
       <div class="groups">
@@ -215,6 +222,59 @@
               escura.
             </p>
             <span class="src">v2 + v3 · referência estrutural: vercel.com</span>
+          </a>
+        </div>
+
+        <p class="group-label">Grupo D · teste com Antigravity CLI</p>
+        <p class="group-note">
+          Estas quatro foram geradas por uma ferramenta diferente (Antigravity
+          CLI, não os agentes usados nos grupos A–C), como teste — um par
+          escuro/claro para cada fonte de conteúdo já usada acima.
+        </p>
+        <div class="grid">
+          <a class="card" href="v7/">
+            <span class="n">Versão 7</span>
+            <h2>Grade condensada — escura</h2>
+            <p>
+              Tipografia arredondada/condensada em caixa-alta sobre preto com
+              textura de grade sutil no fundo. Terceira personalidade
+              tipográfica a partir do wireframe, além da editorial (v1) e da
+              enterprise (v2).
+            </p>
+            <span class="src">Fonte: wireframe · Antigravity CLI (teste)</span>
+          </a>
+          <a class="card" href="v8/">
+            <span class="n">Versão 8</span>
+            <h2>Grade condensada — clara</h2>
+            <p>
+              Mesma família tipográfica de v7, mesmo mapa de seções do
+              wireframe, invertida para off-white dominante e tinta quase preta
+              no texto.
+            </p>
+            <span class="src">Fonte: wireframe · Antigravity CLI (teste)</span>
+          </a>
+          <a class="card" href="v9/">
+            <span class="n">Versão 9</span>
+            <h2>Azul-marinho — escura</h2>
+            <p>
+              Um quinto "escuro" a partir do conteúdo editorial: gradiente
+              azul-marinho quase preto em vez do neutro/preto puro já usado em
+              v3, v4, v5 e v6.
+            </p>
+            <span class="src"
+              >Fonte: institucional.md · Antigravity CLI (teste)</span
+            >
+          </a>
+          <a class="card" href="v10/">
+            <span class="n">Versão 10</span>
+            <h2>Serifada — clara</h2>
+            <p>
+              A primeira proposta clara a partir do conteúdo editorial (v3–v6
+              são todas escuras) — off-white dominante com tipografia serifada.
+            </p>
+            <span class="src"
+              >Fonte: institucional.md · Antigravity CLI (teste)</span
+            >
           </a>
         </div>
       </div>
