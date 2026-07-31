@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2iA Consulting — 5 propostas de landing page</title>
+    <link rel="icon" href="assets/logo-laranja.webp" type="image/webp" />
+    <style>
+      :root {
+        --ink: #17141b;
+        --ink-2: #221e27;
+        --paper: #faf8f6;
+        --accent: #ca895f;
+        --accent-ink: #8a5233;
+        --line: rgba(255, 255, 255, 0.1);
+        --muted: #a29ba4;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--ink);
+        color: var(--paper);
+        font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 72px 24px 96px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 40px;
+      }
+      header img {
+        width: 52px;
+        height: auto;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: clamp(1.9rem, 4vw, 2.75rem);
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        margin: 0;
+      }
+      .sub {
+        color: var(--muted);
+        max-width: 62ch;
+        margin: 20px 0 8px;
+      }
+      .groups {
+        margin-top: 56px;
+      }
+      .group-label {
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+        margin: 48px 0 24px;
+      }
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      a.card {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        background: var(--ink-2);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 24px;
+        transition:
+          border-color 0.2s ease,
+          transform 0.2s ease;
+      }
+      a.card:hover,
+      a.card:focus-visible {
+        border-color: var(--accent);
+        transform: translateY(-2px);
+      }
+      a.card:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+      .n {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        color: var(--accent);
+        text-transform: uppercase;
+      }
+      .card h2 {
+        font-size: 1.15rem;
+        margin: 10px 0 8px;
+        letter-spacing: -0.01em;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .card .src {
+        margin-top: 14px;
+        font-size: 0.78rem;
+        color: #6f6a72;
+      }
+      footer {
+        margin-top: 64px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: #6f6a72;
+        font-size: 0.85rem;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        a.card {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <img src="assets/logo-laranja.webp" alt="Marca 2iA Consulting" />
+        <h1>Cinco propostas de landing page</h1>
+      </header>
+      <p class="sub">
+        Cinco direções de design distintas para a mesma empresa e o mesmo
+        conteúdo. Dois grupos: as duas primeiras partem do wireframe interno; as
+        três seguintes partem do conteúdo editorial, com referência visual em
+        sites de mercado.
+      </p>
+
+      <div class="groups">
+        <p class="group-label">
+          Grupo A · a partir do wireframe (GuiaVisual/2iA_Wireframe_Site.md)
+        </p>
+        <div class="grid">
+          <a class="card" href="v1/">
+            <span class="n">Versão 1</span>
+            <h2>Editorial tipográfico</h2>
+            <p>
+              Serifada de display, espaço em branco radical, quase
+              monocromático, grid assimétrico e filetes no lugar de cards. A
+              página como ensaio impresso.
+            </p>
+            <span class="src">Fonte de conteúdo: wireframe</span>
+          </a>
+          <a class="card" href="v2/">
+            <span class="n">Versão 2</span>
+            <h2>Enterprise técnico</h2>
+            <p>
+              Grotesk pesada + monoespaçada, textura escura dominante, tudo em
+              grade e módulos delimitados, dados em destaque bruto. A página
+              como dossiê de engenharia.
+            </p>
+            <span class="src">Fonte de conteúdo: wireframe</span>
+          </a>
+        </div>
+
+        <p class="group-label">
+          Grupo B · a partir do conteúdo editorial
+          (site/content/institucional.md)
+        </p>
+        <div class="grid">
+          <a class="card" href="v3/">
+            <span class="n">Versão 3</span>
+            <h2>Preto contínuo</h2>
+            <p>
+              Preto absoluto do topo ao rodapé, cards preto-sobre-preto com
+              borda mínima, pills em todo lugar, molde de seção repetido.
+              Hierarquia por espaço, não por peso.
+            </p>
+            <span class="src">Referência visual: perssua.com/pt</span>
+          </a>
+          <a class="card" href="v4/">
+            <span class="n">Versão 4</span>
+            <h2>Preto e assimétrico</h2>
+            <p>
+              Preto puro com paleta amostrada do dark mode da Vercel, tracking
+              negativo agressivo, hero em três zonas com halo atrás da marca e
+              superfícies bento com borda de 1px.
+            </p>
+            <span class="src">Referência visual: vercel.com (dark mode)</span>
+          </a>
+          <a class="card" href="v5/">
+            <span class="n">Versão 5</span>
+            <h2>Carvão sistematizado</h2>
+            <p>
+              Carvão em camadas com superfícies estratificadas, numeração
+              hierárquica como espinha dorsal, grid de duas colunas e escala
+              tipográfica apertada.
+            </p>
+            <span class="src">Referência visual: linear.app</span>
+          </a>
+        </div>
+
+        <p class="group-label">Grupo C · mescla</p>
+        <div class="grid">
+          <a class="card" href="v6/">
+            <span class="n">Versão 6</span>
+            <h2>Dossiê escuro</h2>
+            <p>
+              Mescla da v2 com a v3: o rigor de dossiê técnico e a numeração
+              monoespaçada sobre preto contínuo, com a estrutura da Vercel —
+              tracking fechado, hero em três zonas e superfícies bento — em base
+              escura.
+            </p>
+            <span class="src">v2 + v3 · referência estrutural: vercel.com</span>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        Protótipos de avaliação — conteúdo institucional da 2iA Consulting, sem
+        cases, depoimentos ou logos de cliente.
+      </footer>
+    </div>
+  </body>
+</html>

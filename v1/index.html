@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- prettier-ignore -->
+    <title>2iA Consulting — Inteligências artificiais para resultados reais</title>
+    <meta
+      name="description"
+      content="Consultoria de IA para operação complexa — não para prova de conceito isolada. Diagnóstico inicial gratuito."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#hero">Ir para o conteúdo</a>
+
+    <header class="masthead" id="masthead">
+      <div class="masthead__inner">
+        <a class="wordmark" href="#hero" aria-label="2iA consulting — início">
+          <img
+            class="wordmark__mark"
+            src="../assets/logo-laranja.webp"
+            alt=""
+            width="640"
+            height="608"
+          />
+          <span class="wordmark__text">
+            <span class="wordmark__name">2iA</span>
+            <span class="wordmark__sub">[consulting]</span>
+          </span>
+        </a>
+
+        <nav class="masthead__nav" aria-label="Navegação principal">
+          <a href="#metodo">Método</a>
+          <a href="#como-trabalhamos">Como trabalhamos</a>
+          <a href="#setores">Setores</a>
+          <a href="#seguranca">Segurança</a>
+        </nav>
+
+        <a class="pill" href="#diagnostico">Agendar Diagnóstico</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. HERO — [ESCURO] -->
+      <section class="section section--dark hero" id="hero">
+        <div class="section__bg section__bg--texture" aria-hidden="true"></div>
+        <div class="wrap hero__wrap">
+          <img
+            class="hero__mark reveal"
+            src="../assets/logo-branca.webp"
+            alt="Símbolo da marca 2iA Consulting"
+            width="640"
+            height="608"
+          />
+
+          <h1 class="display display--xl reveal">
+            Inteligências artificiais para resultados reais.
+          </h1>
+
+          <p class="hero__support reveal">
+            Consultoria de IA para operação complexa — não para prova de
+            conceito isolada.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a class="button" href="#diagnostico"
+              >Agende seu Diagnóstico Inicial — grátis</a
+            >
+            <a class="quiet-link" href="#metodo">Ver como funciona ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. MANIFESTO — [CLARO] -->
+      <section
+        class="section section--light statement"
+        id="manifesto"
+        aria-label="Manifesto"
+      >
+        <div class="wrap">
+          <p class="statement__line reveal">
+            <em>O futuro vai ser definido por alguém. Que seja por você.</em>
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. CONTEXTO DE MERCADO — [CLARO] -->
+      <section
+        class="section section--light"
+        id="contexto"
+        aria-labelledby="contexto-title"
+      >
+        <div class="wrap">
+          <p class="kicker reveal">03 · Contexto</p>
+          <h2
+            class="display display--lg headline-offset reveal"
+            id="contexto-title"
+          >
+            Para quem lidera o mercado, adotar IA deixou de ser opção — virou
+            tendência inevitável.
+          </h2>
+
+          <div class="figures">
+            <div class="figure reveal">
+              <p class="figure__value">16,9% → 41,9%</p>
+              <p class="figure__legend">
+                Adoção corporativa no Brasil (empresas com 100+ funcionários),
+                de 2022 para 2025.
+              </p>
+            </div>
+            <div class="figure reveal">
+              <p class="figure__value">55% → 72%</p>
+              <p class="figure__legend">
+                Adoção global de IA em um único ano, entre 2023 e 2024.
+              </p>
+            </div>
+          </div>
+
+          <p class="aside-note reveal">
+            O investimento também aumentou de escala: o valor médio aplicado por
+            empresa enterprise em iniciativas de IA foi de US$ 114 milhões em
+            2025, projetando US$ 130 milhões nos próximos 12 meses.
+          </p>
+
+          <p class="source reveal">
+            Fontes: McKinsey (“The State of AI”), Deloitte — dados de mercado
+            2025.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4. O PARADOXO DO MERCADO — [ESCURO] -->
+      <section
+        class="section section--dark"
+        id="paradoxo"
+        aria-labelledby="paradoxo-title"
+      >
+        <div class="section__bg section__bg--texture" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="kicker reveal">04 · O paradoxo do mercado</p>
+          <h2 class="display display--lg reveal" id="paradoxo-title">
+            Adotar virou regra. Escalar continua sendo exceção.
+          </h2>
+
+          <p class="lead lead--offset reveal">
+            A adesão à IA já não é diferencial entre quem lidera o mercado — é
+            tendência estabelecida. Mas a maioria ainda não consegue transformar
+            esse investimento em resultado operacional.
+          </p>
+
+          <div class="figures">
+            <div class="figure reveal">
+              <p class="figure__value">7%</p>
+              <p class="figure__legend">
+                das empresas no mundo têm iniciativas de IA totalmente
+                escaladas. 30% seguem travadas em piloto.
+              </p>
+            </div>
+            <div class="figure reveal">
+              <p class="figure__value">23%</p>
+              <p class="figure__legend">
+                das empresas no Brasil conseguem escalar 40%+ de seus
+                projetos-piloto. Principal barreira: dados não estruturados (67%
+                dos casos).
+              </p>
+            </div>
+          </div>
+
+          <p class="aside-note reveal">
+            O que separa quem escala de quem trava não é orçamento — é
+            direcionamento: ter alguém que saiba guiar a organização da adoção à
+            autonomia real.
+          </p>
+
+          <p class="source reveal">Fontes: McKinsey, dados de mercado 2025.</p>
+        </div>
+      </section>
+
+      <!-- 5. QUEM SOMOS + MÉTODO — [CLARO] -->
+      <section
+        class="section section--light"
+        id="metodo"
+        aria-labelledby="metodo-title"
+      >
+        <div class="wrap">
+          <p class="kicker reveal">Quem Somos</p>
+
+          <div class="split">
+            <figure class="split__figure reveal">
+              <img
+                src="../assets/logo-laranja.webp"
+                alt="Símbolo da marca 2iA Consulting em versão terracota"
+                width="640"
+                height="608"
+              />
+            </figure>
+            <div class="split__body">
+              <h2 class="display display--lg reveal" id="metodo-title">
+                O problema raramente é&nbsp;a&nbsp;IA.
+              </h2>
+              <p class="prose reveal">
+                É a distância entre o que ela promete e o que a organização
+                consegue extrair dela. A 2iA Consulting atua em três frentes,
+                nesta ordem: estruturação de dados, capacitação de times e
+                implementação de soluções sob medida. Toda relação começa com um
+                diagnóstico gratuito. Todo projeto termina com o cliente
+                operando com autonomia o que foi construído.
+              </p>
+            </div>
+          </div>
+
+          <ol class="frentes">
+            <li class="frente reveal">
+              <span class="frente__glyph" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <rect x="4.5" y="4.5" width="39" height="39" rx="9" />
+                  <circle cx="24" cy="24" r="7.5" />
+                </svg>
+              </span>
+              <h3 class="frente__title">
+                <span class="frente__num">01</span> — Dados <i>(DATA)</i>
+              </h3>
+              <p class="frente__text">
+                Estruturação e organização de bases prontas para IA.
+              </p>
+            </li>
+            <li class="frente reveal">
+              <span class="frente__glyph frente__glyph--rot" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <rect x="4.5" y="4.5" width="39" height="39" rx="9" />
+                  <circle cx="24" cy="24" r="7.5" />
+                </svg>
+              </span>
+              <h3 class="frente__title">
+                <span class="frente__num">02</span> — Inteligência
+                <i>(ACADEMY)</i>
+              </h3>
+              <p class="frente__text">
+                Capacitação de times para uso estratégico e autônomo.
+              </p>
+            </li>
+            <li class="frente reveal">
+              <span class="frente__glyph" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <circle cx="24" cy="24" r="19.5" />
+                  <circle cx="24" cy="24" r="7.5" />
+                </svg>
+              </span>
+              <h3 class="frente__title">
+                <span class="frente__num">03</span> — Ação <i>(FACTORY)</i>
+              </h3>
+              <p class="frente__text">
+                Soluções sob medida, do diagnóstico à escala.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 6. COMO TRABALHAMOS — [ESCURO] -->
+      <section
+        class="section section--dark"
+        id="como-trabalhamos"
+        aria-labelledby="como-title"
+      >
+        <div class="section__bg section__bg--texture" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="kicker reveal">07 · Como trabalhamos</p>
+          <h2
+            class="display display--lg headline-offset reveal"
+            id="como-title"
+          >
+            O mesmo cuidado, para todo cliente — independente do tamanho do
+            projeto.
+          </h2>
+
+          <ol class="ledger">
+            <li class="ledger__row reveal">
+              <span class="ledger__num">01</span>
+              <h3 class="ledger__term">Identifique</h3>
+              <p class="ledger__desc">Clareza sobre dores e gargalos.</p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">02</span>
+              <h3 class="ledger__term">Audite</h3>
+              <p class="ledger__desc">Entendimento baseado em evidências.</p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">03</span>
+              <h3 class="ledger__term">Implemente</h3>
+              <p class="ledger__desc">De acordo com ecossistema do cliente.</p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">04</span>
+              <h3 class="ledger__term">Suporte</h3>
+              <p class="ledger__desc">Autonomia sem abandono.</p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">05</span>
+              <h3 class="ledger__term">Aprenda</h3>
+              <p class="ledger__desc">Aperfeiçoamento e evolução.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 7. POR QUE FUNCIONA — [CLARO] -->
+      <section
+        class="section section--light"
+        id="por-que-funciona"
+        aria-labelledby="porque-title"
+      >
+        <div class="wrap">
+          <p class="kicker reveal">08 · Por que funciona</p>
+          <h2 class="visually-hidden" id="porque-title">Por que funciona</h2>
+
+          <ol class="ledger ledger--tall">
+            <li class="ledger__row reveal">
+              <span class="ledger__num">01</span>
+              <h3 class="ledger__term">Quick win na primeira entrega</h3>
+              <p class="ledger__desc">
+                Resultado mensurável em semanas; meta mínima de 5h/semana
+                recuperadas por usuário.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">02</span>
+              <h3 class="ledger__term">Sem dependência de fornecedor</h3>
+              <p class="ledger__desc">
+                Autonomia do time ao final do projeto é parte do contrato.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">03</span>
+              <h3 class="ledger__term">
+                Diagnóstico gratuito antes de qualquer proposta
+              </h3>
+              <p class="ledger__desc">
+                Decisão de avançar (ou não) baseada em dado, não em pitch.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">04</span>
+              <h3 class="ledger__term">
+                Imersão real no ecossistema do cliente
+              </h3>
+              <p class="ledger__desc">
+                Solução pensada e construída a partir da realidade operacional,
+                dos objetivos e das preferências de cada cliente — não de um
+                pacote padronizado.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">05</span>
+              <h3 class="ledger__term">KPI acordado antes do início</h3>
+              <p class="ledger__desc">
+                ROI calculado previamente, não estimado depois.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 8. SEGURANÇA E GOVERNANÇA — [CLARO] -->
+      <section
+        class="section section--light"
+        id="seguranca"
+        aria-labelledby="seguranca-title"
+      >
+        <div class="wrap">
+          <p class="kicker reveal">Segurança e Governança</p>
+
+          <div class="split split--reverse">
+            <div class="split__body">
+              <h2 class="display display--lg reveal" id="seguranca-title">
+                Acesso mínimo. Conformidade desde o primeiro contato.
+              </h2>
+              <p class="prose reveal">
+                Acesso a sistemas e dados é somente leitura por padrão.
+                Diagnóstico e auditoria não exigem alteração de dado nenhum do
+                cliente. LGPD é requisito de entrega desde a primeira conversa —
+                não um adendo contratual posterior.
+              </p>
+            </div>
+            <ul class="checklist reveal">
+              <li>Acesso somente leitura por padrão</li>
+              <li>LGPD desde a primeira conversa</li>
+              <li>Dados sensíveis em ambiente dedicado</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. SETORES E CONTEXTOS DE ATUAÇÃO — [ESCURO] -->
+      <section
+        class="section section--dark"
+        id="setores"
+        aria-labelledby="setores-title"
+      >
+        <div class="section__bg section__bg--texture" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="kicker reveal">11 · Setores e contextos de atuação</p>
+          <h2 class="display display--lg reveal" id="setores-title">
+            Construído para operação complexa — não para prova de conceito
+            isolada.
+          </h2>
+
+          <p class="lead lead--offset reveal">
+            Não fazemos distinção de segmento — nos concentramos em criar
+            soluções que melhorem o negócio e a rotina de trabalho de cada
+            cliente. Cada caso é tratado como um projeto único, para que a
+            entrega seja naturalmente eficaz e aderente.
+          </p>
+
+          <p class="cue reveal">Alguns dos contextos onde já atuamos:</p>
+
+          <ul class="sectors">
+            <li class="reveal">
+              <span aria-hidden="true"></span>Serviços Financeiros / Fintechs
+            </li>
+            <li class="reveal"><span aria-hidden="true"></span>Saúde</li>
+            <li class="reveal">
+              <span aria-hidden="true"></span>Varejo e E-commerce
+            </li>
+            <li class="reveal">
+              <span aria-hidden="true"></span>Serviços Profissionais
+            </li>
+            <li class="reveal">
+              <span aria-hidden="true"></span>Indústria e Manufatura
+            </li>
+            <li class="reveal">
+              <span aria-hidden="true"></span>Scale-ups em crescimento acelerado
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 10. PRINCÍPIOS — [CLARO] -->
+      <section
+        class="section section--light"
+        id="principios"
+        aria-labelledby="principios-title"
+      >
+        <div class="wrap">
+          <p class="kicker reveal">12 · Princípios</p>
+          <h2
+            class="display display--lg headline-offset reveal"
+            id="principios-title"
+          >
+            Como decidimos quando ninguém está olhando.
+          </h2>
+
+          <ol class="ledger">
+            <li class="ledger__row reveal">
+              <span class="ledger__num">01</span>
+              <h3 class="ledger__term">Agilidade</h3>
+              <p class="ledger__desc">
+                Resultado rápido sem sacrificar fundação sólida.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">02</span>
+              <h3 class="ledger__term">Confiança</h3>
+              <p class="ledger__desc">
+                KPI acordado antes de qualquer entrega.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">03</span>
+              <h3 class="ledger__term">Transparência</h3>
+              <p class="ledger__desc">
+                Se o cliente não está pronto, isso é comunicado — mesmo adiando
+                uma venda.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">04</span>
+              <h3 class="ledger__term">Responsabilidade</h3>
+              <p class="ledger__desc">
+                Estrutura de dado antes de automação, capacitação antes de
+                escala.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">05</span>
+              <h3 class="ledger__term">Excelência técnica</h3>
+              <p class="ledger__desc">
+                Execução orientada a aderência e funcionalidade.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 11. VISÃO DE FUTURO — [ESCURO] -->
+      <section
+        class="section section--dark statement"
+        id="visao"
+        aria-label="Visão de futuro"
+      >
+        <div class="section__bg section__bg--logo" aria-hidden="true"></div>
+        <div class="wrap">
+          <p class="statement__line reveal">
+            <em
+              >Referência em adoção consciente de inteligência artificial —
+              medida por resultado obtido, não por volume de ferramenta
+              implementada.</em
+            >
+          </p>
+          <p class="statement__support reveal">
+            Adoção consciente e estratégia cria vantagens sustentáveis. Adoção
+            por pressão e sem preparo é apenas despesa afundada.
+          </p>
+        </div>
+      </section>
+
+      <!-- 12 + DIAGNÓSTICO — [ESCURO] -->
+      <section
+        class="section section--dark diag"
+        id="diagnostico"
+        aria-labelledby="diag-title"
+      >
+        <div class="section__bg section__bg--texture" aria-hidden="true"></div>
+        <div class="wrap">
+          <div class="diag__intro">
+            <h2 class="display display--lg reveal" id="diag-title">
+              O próximo passo é gratuito e leva 45 minutos.
+            </h2>
+            <p class="lead reveal">
+              Uma conversa de 30 a 45 minutos para entender se existe
+              oportunidade real de IA na sua operação — e por onde começar. Não
+              é reunião de vendas.
+            </p>
+            <p class="lead lead--dim reveal">
+              Ao final, uma resposta objetiva: se há oportunidade real, e por
+              onde começar.
+            </p>
+          </div>
+
+          <form class="form reveal" id="form" novalidate>
+            <div class="form__grid">
+              <p class="field">
+                <label for="f-nome">Nome completo</label>
+                <input
+                  id="f-nome"
+                  name="nome"
+                  type="text"
+                  autocomplete="name"
+                />
+              </p>
+              <p class="field">
+                <label for="f-cargo">Cargo</label>
+                <input
+                  id="f-cargo"
+                  name="cargo"
+                  type="text"
+                  autocomplete="organization-title"
+                />
+              </p>
+              <p class="field">
+                <label for="f-email">E-mail</label>
+                <input
+                  id="f-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                />
+              </p>
+              <p class="field">
+                <label for="f-whats">WhatsApp</label>
+                <input
+                  id="f-whats"
+                  name="whatsapp"
+                  type="tel"
+                  autocomplete="tel"
+                />
+              </p>
+              <p class="field">
+                <label for="f-empresa">Empresa</label>
+                <input
+                  id="f-empresa"
+                  name="empresa"
+                  type="text"
+                  autocomplete="organization"
+                />
+              </p>
+              <p class="field">
+                <label for="f-site">Site da empresa</label>
+                <input id="f-site" name="site" type="url" autocomplete="url" />
+              </p>
+              <p class="field field--wide">
+                <label for="f-area"
+                  >Área/departamento que mais te preocupa hoje</label
+                >
+                <select id="f-area" name="area">
+                  <option value="">Selecione uma área</option>
+                  <option>Vendas</option>
+                  <option>Marketing</option>
+                  <option>Suporte/Atendimento</option>
+                  <option>Operações</option>
+                  <option>Financeiro</option>
+                  <option>RH</option>
+                  <option>Gestão/Decisão</option>
+                  <option>Outro</option>
+                </select>
+              </p>
+            </div>
+
+            <p class="consent">
+              <input id="f-consent" name="consent" type="checkbox" />
+              <label for="f-consent"
+                >Concordo em ser contatado pela 2iA para agendar o diagnóstico
+                gratuito.</label
+              >
+            </p>
+
+            <button class="button" type="submit">
+              Ver horários disponíveis
+            </button>
+            <p class="microcopy">Sem compromisso.</p>
+          </form>
+        </div>
+      </section>
+
+      <!-- DIAGNÓSTICO · O QUE ESPERAR — [CLARO] -->
+      <section
+        class="section section--light"
+        id="o-que-esperar"
+        aria-labelledby="esperar-title"
+      >
+        <div class="wrap">
+          <h2
+            class="display display--lg headline-offset reveal"
+            id="esperar-title"
+          >
+            O que o Diagnóstico Gratuito é — e o que ele não é.
+          </h2>
+
+          <div class="columns">
+            <div class="column reveal">
+              <h3 class="column__head">Inclui:</h3>
+              <ul class="column__list column__list--in">
+                <li>Reunião de 30–45 min, com foco total no seu negócio.</li>
+                <li>Revisão de 1 a 3 áreas mais prováveis de ganho com IA.</li>
+                <li>Identificação de dores e oportunidades aparentes.</li>
+                <li>
+                  Uma recomendação clara de próximo passo — inclusive se for
+                  “ainda não é a hora”.
+                </li>
+              </ul>
+            </div>
+            <div class="column reveal">
+              <h3 class="column__head">
+                Não inclui <i>(isso vem na Auditoria Paga)</i>:
+              </h3>
+              <ul class="column__list column__list--out">
+                <li>Entrevistas com várias pessoas do seu time.</li>
+                <li>Mapa detalhado de processos.</li>
+                <li>Inventário profundo de dados e sistemas.</li>
+                <li>Modelo de ROI ou arquitetura técnica completa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIAGNÓSTICO · O QUE ACONTECE DEPOIS — [CLARO] -->
+      <section
+        class="section section--light"
+        id="depois"
+        aria-labelledby="depois-title"
+      >
+        <div class="wrap">
+          <h2 class="display display--lg reveal" id="depois-title">
+            O que acontece depois de agendar
+          </h2>
+
+          <ol class="ledger ledger--tall">
+            <li class="ledger__row reveal">
+              <span class="ledger__num">01</span>
+              <h3 class="ledger__term">Você agenda um horário.</h3>
+              <p class="ledger__desc">
+                Recebe por e-mail um formulário rápido (10–15 min) para
+                chegarmos preparados na conversa.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">02</span>
+              <h3 class="ledger__term">Conversamos por 30–45 minutos.</h3>
+              <p class="ledger__desc">
+                Com sua permissão, gravamos para não perder nenhum detalhe.
+              </p>
+            </li>
+            <li class="ledger__row reveal">
+              <span class="ledger__num">03</span>
+              <h3 class="ledger__term">
+                Você recebe um Diagnóstico por escrito em até 2 dias úteis
+              </h3>
+              <p class="ledger__desc">
+                Com o que identificamos e uma recomendação objetiva de próximo
+                passo.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- DIAGNÓSTICO · FAQ — [ESCURO] -->
+      <section
+        class="section section--dark"
+        id="faq"
+        aria-labelledby="faq-title"
+      >
+        <div class="section__bg section__bg--texture" aria-hidden="true"></div>
+        <div class="wrap">
+          <h2 class="display display--lg reveal" id="faq-title">
+            Perguntas frequentes
+          </h2>
+
+          <div class="faq">
+            <details class="faq__item reveal">
+              <summary>“Já tentamos IA antes e não funcionou.”</summary>
+              <p>
+                Por isso começamos pelo diagnóstico gratuito — mapeamos o que
+                travou antes (geralmente arquitetura ou capacitação, não a
+                tecnologia em si) antes de propor qualquer coisa nova.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>“Não temos dados organizados para isso.”</summary>
+              <p>
+                Isso é normal — é o ponto de partida de praticamente todo
+                projeto que fazemos. Estruturar dado é a primeira das nossas
+                três frentes, não um pré-requisito que falta pra te atender.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>“Não temos budget agora.”</summary>
+              <p>
+                O diagnóstico é gratuito de qualquer forma. Se não for o
+                momento, dizemos isso com clareza — e você decide quando
+                retomar.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>“Nosso time não vai adotar isso.”</summary>
+              <p>
+                Capacitação faz parte do método, não é um extra. Formamos
+                pessoas do seu time para validar a solução antes de qualquer
+                escala.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>“Quanto tempo leva para ver resultado?”</summary>
+              <p>
+                Isso depende do que a Auditoria Paga identificar como
+                prioridade. O que é fixo é a meta — mínimo de 5 horas por semana
+                recuperadas por usuário — e acompanhamento constante durante
+                toda a implementação.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>“Como sei que meus dados estão seguros?”</summary>
+              <p>
+                Acesso é somente leitura por padrão. LGPD é requisito desde a
+                primeira conversa — não um adendo contratual depois.
+              </p>
+            </details>
+            <details class="faq__item reveal">
+              <summary>“Vocês têm cases para eu ver antes?”</summary>
+              <p>
+                Como a 2iA está construindo seu portfólio agora, a resposta
+                honesta é: o diagnóstico gratuito é a prova. Sem risco, sem
+                custo, você vê nosso método em ação antes de decidir qualquer
+                coisa.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-labelledby="footer-title">
+      <div class="wrap">
+        <h2 class="visually-hidden" id="footer-title">Rodapé</h2>
+        <div class="footer__top">
+          <div class="footer__brand">
+            <span class="wordmark wordmark--footer">
+              <span class="wordmark__text">
+                <span class="wordmark__name">2iA</span>
+                <span class="wordmark__sub">[consulting]</span>
+              </span>
+            </span>
+            <p class="footer__signature"><em>Pra usar e vender</em></p>
+          </div>
+
+          <nav class="footer__col" aria-label="Navegação do rodapé">
+            <h3 class="footer__head">Navegação</h3>
+            <ul>
+              <li><a href="#metodo">Método</a></li>
+              <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+              <li><a href="#setores">Setores</a></li>
+              <li><a href="#seguranca">Segurança</a></li>
+              <li><a href="#diagnostico">Diagnóstico</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer__col">
+            <h3 class="footer__head">Contato</h3>
+            <ul>
+              <li><a href="#">E-mail</a></li>
+              <li><a href="#">WhatsApp</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__head">Legal</h3>
+            <ul>
+              <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__base">
+          © <span id="year">2026</span> 2iA Consulting.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
