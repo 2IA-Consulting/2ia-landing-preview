@@ -104,12 +104,28 @@ h3 {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
+  inset: 0 0 auto 0;
   z-index: 20;
-  top: 0;
   border-bottom: 1px solid var(--line);
   background: rgba(5, 5, 6, 0.88);
   backdrop-filter: blur(18px);
+}
+
+/* Escondido só sob .js (marcada por um script síncrono no <head>, antes
+   da 1ª pintura) — sem JS o header fica fixo e sempre visível, nunca
+   inacessível. Com JS, começa fora da tela e desliza ao rolar. */
+.js .site-header {
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+}
+
+.js .site-header.is-visible {
+  transform: translateY(0%);
+}
+
+[id] {
+  scroll-margin-top: 90px;
 }
 
 .header-inner {
@@ -220,7 +236,8 @@ h3 {
 
 .hero {
   position: relative;
-  min-height: 780px;
+  min-height: 100vh;
+  min-height: 100dvh;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: #030304;
@@ -251,7 +268,8 @@ h3 {
 .hero-grid {
   position: relative;
   display: grid;
-  min-height: 780px;
+  min-height: 100vh;
+  min-height: 100dvh;
   grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.65fr) minmax(
       230px,
       0.55fr
@@ -417,7 +435,7 @@ h3 {
 
 .manifesto-inner {
   display: grid;
-  min-height: 390px;
+  min-height: 460px;
   grid-template-columns: 1fr minmax(0, 820px) 1fr;
   align-items: center;
   gap: 42px;
@@ -440,11 +458,11 @@ h3 {
 .section {
   position: relative;
   border-bottom: 1px solid var(--line);
-  padding-block: 132px;
+  padding-block: 176px;
 }
 
 .section--compact {
-  padding-top: 96px;
+  padding-top: 128px;
 }
 
 .section-label {
@@ -592,7 +610,9 @@ h3 {
   place-items: center;
   border: 1px solid var(--line);
   border-right: 0;
-  background: var(--paper);
+  background:
+    linear-gradient(rgba(9, 9, 11, 0.7), rgba(9, 9, 11, 0.85)),
+    url("../assets/bg-textura.webp") center / cover no-repeat;
 }
 
 .brand-plate img {
@@ -910,7 +930,7 @@ h3 {
 }
 
 .vision-inner {
-  padding-block: 160px;
+  padding-block: 200px;
 }
 
 .vision h2 {
@@ -926,7 +946,7 @@ h3 {
 
 .final-cta {
   border-bottom: 1px solid var(--line);
-  padding-block: 120px;
+  padding-block: 160px;
 }
 
 .final-cta-panel {
@@ -967,7 +987,7 @@ h3 {
 
 .diagnostic {
   border-bottom: 1px solid var(--line);
-  padding-block: 132px;
+  padding-block: 176px;
   background: #030304;
 }
 
@@ -1129,6 +1149,14 @@ h3 {
 }
 
 .after-steps strong {
+  color: var(--paper);
+  font-weight: 500;
+}
+
+/* Realce à la Apple: o corpo do texto fica no tom secundário (--muted)
+   e só a frase-chave sobe para --paper com peso 500 — mesmo tratamento
+   que .after-steps já usava, agora disponível em qualquer parágrafo. */
+strong {
   color: var(--paper);
   font-weight: 500;
 }
@@ -1528,11 +1556,11 @@ h3 {
 
   .section,
   .diagnostic {
-    padding-block: 88px;
+    padding-block: 118px;
   }
 
   .section--compact {
-    padding-top: 74px;
+    padding-top: 98px;
   }
 
   .section-label {
@@ -1711,7 +1739,7 @@ h3 {
   }
 
   .vision-inner {
-    padding-block: 100px;
+    padding-block: 130px;
   }
 
   .vision h2 {
@@ -1719,7 +1747,7 @@ h3 {
   }
 
   .final-cta {
-    padding-block: 72px;
+    padding-block: 96px;
   }
 
   .final-cta-panel {
