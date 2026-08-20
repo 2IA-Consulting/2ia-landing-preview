@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- síncrono e no topo: precisa marcar .js antes da 1ª pintura, senão
+         o header hidden-by-default (que só existe sob .js) causaria um
+         flash de header visível-depois-escondido. Externo (não inline)
+         porque o CSP de produção é script-src 'self' — 'self' nunca cobre
+         conteúdo inline, só arquivos de mesma origem. -->
+    <script src="bootstrap.js"></script>
+    <!-- prettier-ignore -->
+    <title>2iA Consulting — Inteligências artificiais para resultados reais</title>
+    <meta
+      name="description"
+      content="Consultoria de IA para operação complexa — não para prova de conceito isolada."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p class="preview-flag">
+      Pré-visualização — não é o site publicado.
+      <a href="https://2ia.consulting">Ver 2ia.consulting →</a>
+    </p>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#hero" aria-label="2iA Consulting">
+          <img
+            src="assets/logo-branca.webp"
+            alt="2iA Consulting"
+            width="640"
+            height="608"
+          />
+          <span class="brand-name">2iA <small>[consulting]</small></span>
+        </a>
+
+        <nav class="header-nav" aria-label="Navegação">
+          <div class="header-links">
+            <a href="#como-trabalhamos">Como trabalhamos</a>
+            <a href="#setores">Setores</a>
+          </div>
+          <div class="header-actions">
+            <a class="header-action header-action--ghost" href="#metodo"
+              >Método</a
+            >
+            <a class="header-action header-action--outline" href="#seguranca"
+              >Segurança</a
+            >
+            <a class="header-action header-action--solid" href="auditoria/"
+              >Solicitar Auditoria</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-texture" aria-hidden="true"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              Inteligências artificiais para resultados reais.
+            </h1>
+            <div class="hero-actions">
+              <a class="button button--primary" href="auditoria/">
+                Contrate sua Auditoria de Oportunidades de IA
+              </a>
+              <a class="text-link" href="#metodo">Ver como funciona ↓</a>
+            </div>
+            <!-- A conversa gratuita deixou de ser produto nomeado: entra como
+                 ação secundária, em texto menor, nunca como botão do mesmo peso
+                 do CTA principal. -->
+            <p class="cta-aside">
+              Ficou com dúvidas ou gostaria de mais detalhes?
+              <a href="conversa/"
+                >Marque uma conversa, sem custo, com um de nossos
+                consultores.</a
+              >
+            </p>
+          </div>
+
+          <div class="hero-signal" aria-hidden="true">
+            <span class="signal-halo"></span>
+            <span class="signal-frame">
+              <img
+                src="assets/logo-branca.webp"
+                alt=""
+                width="640"
+                height="608"
+              />
+            </span>
+          </div>
+
+          <ol class="hero-pillars" aria-label="Três frentes">
+            <li>
+              <span class="mono">01</span>
+              <span>Dados</span>
+              <small>(DATA)</small>
+            </li>
+            <li>
+              <span class="mono">02</span>
+              <span>Inteligência</span>
+              <small>(ACADEMY)</small>
+            </li>
+            <li>
+              <span class="mono">03</span>
+              <span>Ação</span>
+              <small>(FACTORY)</small>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="manifesto" aria-label="Manifesto">
+        <div class="shell manifesto-inner">
+          <span class="manifesto-rule" aria-hidden="true"></span>
+          <p>O futuro vai ser definido por alguém. Que seja por você.</p>
+          <span class="manifesto-rule" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="section" id="contexto" aria-labelledby="contexto-title">
+        <div class="shell">
+          <h2 id="contexto-title">
+            Para quem lidera o mercado, adotar IA deixou de ser opção — virou
+            tendência inevitável.
+          </h2>
+
+          <div class="stats-grid">
+            <article class="stat-card stat-card--wide">
+              <p class="stat-number">16,9% <span>→</span> 41,9%</p>
+              <p>
+                Adoção corporativa no Brasil (empresas com 100+ funcionários),
+                de 2022 para 2025.
+              </p>
+            </article>
+            <article class="stat-card">
+              <p class="stat-number">55% <span>→</span> 72%</p>
+              <p>Adoção global de IA em um único ano, entre 2023 e 2024.</p>
+            </article>
+            <article class="stat-note">
+              <p>
+                O investimento também aumentou de escala: o valor médio aplicado
+                por empresa enterprise em iniciativas de IA foi de
+                <strong>US$ 114 milhões</strong> em 2025, projetando
+                <strong>US$ 130 milhões</strong> nos próximos 12 meses.
+              </p>
+            </article>
+          </div>
+          <p class="source">
+            Fontes: McKinsey ("The State of AI"), Deloitte — dados de mercado
+            2025.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section section--compact"
+        id="paradoxo"
+        aria-labelledby="paradoxo-title"
+      >
+        <div class="shell">
+          <div class="heading-split">
+            <h2 id="paradoxo-title">
+              Adotar virou regra. Escalar continua sendo exceção.
+            </h2>
+            <p>
+              A adesão à IA já não é diferencial entre quem lidera o mercado — é
+              tendência estabelecida. Mas a maioria ainda não consegue
+              transformar esse investimento em resultado operacional.
+            </p>
+          </div>
+
+          <div class="stats-grid stats-grid--paradox">
+            <article class="stat-card">
+              <p class="stat-number">7%</p>
+              <p>
+                das empresas no mundo têm iniciativas de IA totalmente
+                escaladas. 30% seguem travadas em piloto.
+              </p>
+            </article>
+            <article class="stat-card stat-card--wide">
+              <p class="stat-number">23%</p>
+              <p>
+                das empresas no Brasil conseguem escalar 40%+ de seus
+                projetos-piloto. Principal barreira: dados não estruturados (67%
+                dos casos).
+              </p>
+            </article>
+            <article class="stat-note stat-note--accent">
+              <p>
+                O que separa quem escala de quem trava não é orçamento — é
+                direcionamento: ter alguém que saiba guiar a organização da
+                adoção à autonomia real.
+              </p>
+            </article>
+          </div>
+          <p class="source">Fontes: McKinsey, dados de mercado 2025.</p>
+        </div>
+      </section>
+
+      <section class="section" id="metodo" aria-labelledby="metodo-title">
+        <div class="shell">
+          <div class="method-intro">
+            <article class="brand-plate">
+              <img
+                src="assets/logo-laranja.webp"
+                alt="Marca 2iA Consulting"
+                width="640"
+                height="608"
+              />
+            </article>
+            <div class="method-copy">
+              <h2 id="metodo-title">O problema raramente é a IA.</h2>
+              <p>
+                É a distância entre o que ela promete e o que a organização
+                consegue extrair dela. A 2iA Consulting atua em três frentes,
+                nesta ordem: estruturação de dados, capacitação de times e
+                implementação de soluções sob medida. Toda relação começa com
+                clareza: uma
+                <strong>Auditoria de Oportunidades de IA</strong>. Se preferir,
+                você pode agendar uma conversa sem custo antes de decidir. E ao
+                final, todo projeto termina com o cliente operando com autonomia
+                o que foi construído para dar resultado.
+              </p>
+            </div>
+          </div>
+
+          <div class="method-grid">
+            <article class="method-card">
+              <div class="card-topline">
+                <span>01</span>
+                <span>(DATA)</span>
+              </div>
+              <h3>Dados</h3>
+              <p>Estruturação e organização de bases prontas para IA.</p>
+            </article>
+            <article class="method-card method-card--raised">
+              <div class="card-topline">
+                <span>02</span>
+                <span>(ACADEMY)</span>
+              </div>
+              <h3>Inteligência</h3>
+              <p>Capacitação de times para uso estratégico e autônomo.</p>
+            </article>
+            <article class="method-card">
+              <div class="card-topline">
+                <span>03</span>
+                <span>(FACTORY)</span>
+              </div>
+              <h3>Ação</h3>
+              <p>Soluções sob medida, da auditoria à escala.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="como-trabalhamos"
+        aria-labelledby="como-title"
+      >
+        <div class="shell">
+          <h2 id="como-title">
+            O mesmo cuidado, para todo cliente — independente do tamanho do
+            projeto.
+          </h2>
+
+          <ol class="timeline">
+            <li>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <span class="timeline-number">01</span>
+              <h3>Identifique</h3>
+              <p>Clareza sobre dores e gargalos.</p>
+            </li>
+            <li>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <span class="timeline-number">02</span>
+              <h3>Audite</h3>
+              <p>Entendimento baseado em evidências.</p>
+            </li>
+            <li>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <span class="timeline-number">03</span>
+              <h3>Implemente</h3>
+              <p>De acordo com ecossistema do cliente.</p>
+            </li>
+            <li>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <span class="timeline-number">04</span>
+              <h3>Suporte</h3>
+              <p>Autonomia sem abandono.</p>
+            </li>
+            <li>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <span class="timeline-number">05</span>
+              <h3>Aprenda</h3>
+              <p>Aperfeiçoamento e evolução.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="por-que-funciona"
+        aria-labelledby="funciona-title"
+      >
+        <div class="shell">
+          <h2 class="section-name" id="funciona-title">Por que funciona</h2>
+
+          <!-- Seis blocos em grid de 3 colunas: com 6 cartões a distribuição
+               fecha em duas linhas cheias, então nenhum precisa dos modificadores
+               de tamanho que equilibravam a versão de 5. -->
+          <ol class="bento-grid bento-grid--six">
+            <li class="bento-card">
+              <span>01</span>
+              <h3>Potencializa, não substitui</h3>
+              <p>
+                A IA acelera o que o time já sabe fazer bem — a
+                <strong>decisão final continua sendo humana</strong>.
+              </p>
+            </li>
+            <li class="bento-card">
+              <span>02</span>
+              <h3>Base de dados própria</h3>
+              <p>
+                Cada solução é construída sobre a realidade e os dados
+                específicos do cliente,
+                <strong>nunca sobre um pacote genérico</strong>.
+              </p>
+            </li>
+            <li class="bento-card">
+              <span>03</span>
+              <h3>Celeridade com qualidade</h3>
+              <p>
+                O primeiro resultado mensurável chega rápido; validar cedo é o
+                que sustenta o resto do projeto.
+              </p>
+            </li>
+            <li class="bento-card">
+              <span>04</span>
+              <h3>Governança de ponta a ponta</h3>
+              <p>
+                Explicabilidade e supervisão humana fazem parte da entrega —
+                <strong>não são um extra opcional</strong>.
+              </p>
+            </li>
+            <li class="bento-card">
+              <span>05</span>
+              <h3>Parceria para manter o foco</h3>
+              <p>
+                Integrar com quem já domina o problema custa menos do que manter
+                uma equipe interna para resolver algo pontual.
+              </p>
+            </li>
+            <li class="bento-card">
+              <span>06</span>
+              <h3>Resultados acima de storytelling</h3>
+              <p>
+                Toda entrega tem uma métrica combinada antes de começar — o
+                <strong>resultado se mede, não se descreve</strong>.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="seguranca" aria-labelledby="seguranca-title">
+        <div class="shell">
+          <!-- O id `seguranca` não pode mudar: a /auditoria/ aponta para
+               ../#seguranca e o rodapé das três páginas também. -->
+          <div class="security-panel">
+            <div>
+              <p class="section-label section-label--plain">Framework GREDS</p>
+              <h2 id="seguranca-title">
+                Acesso mínimo. Conformidade desde o primeiro contato.
+              </h2>
+              <p>
+                Acesso a sistemas e dados é
+                <strong>somente leitura por padrão</strong>. Auditoria não exige
+                alteração de dado nenhum do cliente. LGPD é requisito de entrega
+                <strong>desde a primeira conversa</strong> — não um adendo
+                contratual posterior.
+              </p>
+            </div>
+            <!-- Ordem G-R-E-D-S, a do próprio acrônimo. O documento lista os
+                 cinco em outra ordem, mas exibi-los fora da sigla que dá nome
+                 ao framework confundiria quem lê a sigla primeiro. -->
+            <dl class="check-list check-list--greds">
+              <div>
+                <dt>Governança</dt>
+                <dd>
+                  Toda decisão autônoma segue objetivos de negócio acordados
+                  antes de começar.
+                </dd>
+              </div>
+              <div>
+                <dt>Rastreabilidade</dt>
+                <dd>
+                  Toda recomendação é explicável e compatível com o compliance
+                  do setor.
+                </dd>
+              </div>
+              <div>
+                <dt>Ética</dt>
+                <dd>
+                  Algoritmos livres de viés, alinhados aos valores do cliente.
+                </dd>
+              </div>
+              <div>
+                <dt>Domínio</dt>
+                <dd>
+                  IA calibrada sobre os dados reais do cliente, nunca um modelo
+                  genérico.
+                </dd>
+              </div>
+              <div>
+                <dt>Supervisão</dt>
+                <dd>
+                  Humano valida o resultado; alguém responde quando o agente
+                  erra.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="setores" aria-labelledby="setores-title">
+        <div class="shell">
+          <div class="heading-split">
+            <h2 id="setores-title">
+              Construído para operação complexa — não para prova de conceito
+              isolada.
+            </h2>
+            <p>
+              Não fazemos distinção de segmento — nos concentramos em criar
+              soluções que melhorem o negócio e a rotina de trabalho de cada
+              cliente. Cada caso é tratado como um projeto único, para que a
+              entrega seja naturalmente eficaz e aderente.
+            </p>
+          </div>
+
+          <p class="list-callout">
+            Alguns segmentos que já têm a nossa atenção:
+          </p>
+          <ul class="pill-list">
+            <li>Serviços Financeiros / Fintechs</li>
+            <li>Saúde</li>
+            <li>Varejo e E-commerce</li>
+            <li>Serviços Profissionais</li>
+            <li>Indústria e Manufatura</li>
+            <li>Scale-ups em crescimento acelerado</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="principios"
+        aria-labelledby="principios-title"
+      >
+        <div class="shell">
+          <h2 id="principios-title">
+            Como decidimos quando ninguém está olhando.
+          </h2>
+
+          <dl class="principles">
+            <div>
+              <dt><span>01</span> Agilidade</dt>
+              <dd>Resultado rápido sem sacrificar fundação sólida.</dd>
+            </div>
+            <div>
+              <dt><span>02</span> Confiança</dt>
+              <dd>KPI acordado antes de qualquer entrega.</dd>
+            </div>
+            <div>
+              <dt><span>03</span> Transparência</dt>
+              <dd>
+                Se o cliente não está pronto, isso é comunicado — mesmo adiando
+                uma venda.
+              </dd>
+            </div>
+            <div>
+              <dt><span>04</span> Responsabilidade</dt>
+              <dd>
+                Estrutura de dado antes de automação, capacitação antes de
+                escala.
+              </dd>
+            </div>
+            <div>
+              <dt><span>05</span> Excelência técnica</dt>
+              <dd>Execução orientada a aderência e funcionalidade.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="vision" id="visao" aria-labelledby="visao-title">
+        <div class="shell vision-inner">
+          <h2 id="visao-title">
+            Referência em adoção consciente de inteligência artificial — medida
+            por resultado obtido, não por volume de ferramenta implementada.
+          </h2>
+          <p>
+            Adoção consciente e estratégica cria vantagens sustentáveis. Adoção
+            por pressão e sem preparo se torna custo afundado.
+          </p>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-cta-title">
+        <div class="shell">
+          <div class="final-cta-panel">
+            <h2 id="final-cta-title">
+              Proteja seu investimento com a Auditoria de Oportunidades.
+            </h2>
+            <p>
+              Mergulhamos na sua operação e organizamos os dados que ela já gera
+              para revelar as oportunidades reais escondidas ali. O resultado:
+              prioridades claras, prontas para orientar sua próxima decisão de
+              investimento.
+            </p>
+            <a class="button button--primary" href="auditoria/">
+              Contrate sua Auditoria de Oportunidades de IA
+            </a>
+            <p class="cta-aside">
+              Ficou com dúvidas ou gostaria de mais detalhes?
+              <a href="conversa/"
+                >Marque uma conversa, sem custo, com um de nossos
+                consultores.</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#hero" aria-label="2iA Consulting">
+            <img
+              src="assets/logo-branca.webp"
+              alt="2iA Consulting"
+              width="640"
+              height="608"
+            />
+            <span class="brand-name">2iA <small>[consulting]</small></span>
+          </a>
+          <p>Inteligências artificiais para resultados reais</p>
+        </div>
+
+        <div>
+          <h2>Navegação</h2>
+          <a href="#metodo">Método</a>
+          <a href="#como-trabalhamos">Como trabalhamos</a>
+          <a href="#setores">Setores</a>
+          <a href="#seguranca">Segurança</a>
+          <a href="auditoria/">Auditoria</a>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <a href="#">e-mail</a>
+          <a href="#">WhatsApp</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <a href="#">Política de Privacidade — a redigir</a>
+        </div>
+      </div>
+      <div class="shell footer-bottom">© 2026 2iA Consulting.</div>
+    </footer>
+    <script src="main.js" defer></script>
+  </body>
+</html>
