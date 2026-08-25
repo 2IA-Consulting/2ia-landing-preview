@@ -112,7 +112,7 @@
               <span>03</span>
               <p>
                 <strong>Você decide com um roteiro na mão.</strong> Plano de
-                30/60/90 dias, com opções de implementação e valor já calculado.
+                30/60/90 dias, com opções de implementação.
               </p>
             </li>
           </ol>
@@ -131,107 +131,78 @@
             <li>Mapa completo da operação e inventário de sistemas e dados</li>
             <li>Diagnóstico de gargalos, retrabalho e trabalho manual</li>
             <li>Mapa de oportunidades priorizado por impacto</li>
-            <li>Caso de negócio para as principais oportunidades</li>
             <li>Riscos operacionais, de LGPD e técnicos</li>
             <li>Roadmap de 30, 60 e 90 dias</li>
-            <li>Recomendação de retainer, quando fizer sentido</li>
           </ul>
         </div>
       </section>
 
+      <!-- A tabela nasceu como grade de preço. Sem as colunas de investimento e
+           de demos ela passa a descrever só escopo, então a seção deixou de se
+           chamar "Investimento" — anunciar investimento e não mostrar nenhum
+           seria promessa vazia. O abatimento continua abaixo, porque é condição
+           comercial e não depende de exibir valor. -->
       <section
         class="section section--compact"
-        id="investimento"
-        aria-labelledby="investimento-title"
+        id="escopo"
+        aria-labelledby="escopo-title"
       >
         <div class="shell">
           <div class="heading-split">
-            <h2 id="investimento-title">
-              Investimento — 6 faixas, conforme a complexidade real.
+            <h2 id="escopo-title">
+              Seis faixas, conforme a complexidade real.
             </h2>
             <p>
               A faixa é definida pelo escopo do mapeamento, não por porte de
-              empresa. Os
-              <strong>valores são informados na proposta</strong>, depois de
+              empresa. O
+              <strong>investimento é informado na proposta</strong>, depois de
               confirmado o escopo.
             </p>
           </div>
 
           <div class="comparison-wrap">
-            <table class="comparison comparison--pricing">
+            <table class="comparison comparison--scope">
               <caption class="sr-only">
                 Faixas da Auditoria de Oportunidades de IA por escopo de
-                mapeamento. Valores sob consulta.
+                mapeamento.
               </caption>
               <thead>
                 <tr>
                   <th scope="col">Faixa</th>
-                  <th scope="col">Investimento</th>
                   <th scope="col">Departamentos</th>
                   <th scope="col">Workflows</th>
-                  <th scope="col">Demos</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">Entrada</th>
-                  <td>
-                    <span aria-hidden="true" class="price-masked">R$ *****</span
-                    ><span class="sr-only">valor sob consulta</span>
-                  </td>
                   <td>1–2 departamentos</td>
                   <td>1 workflow</td>
-                  <td>1 demo</td>
                 </tr>
                 <tr>
                   <th scope="row">Inicial</th>
-                  <td>
-                    <span aria-hidden="true" class="price-masked">R$ *****</span
-                    ><span class="sr-only">valor sob consulta</span>
-                  </td>
                   <td>3 departamentos</td>
                   <td>2 workflows</td>
-                  <td>1 demo</td>
                 </tr>
                 <tr>
                   <th scope="row">Padrão</th>
-                  <td>
-                    <span aria-hidden="true" class="price-masked">R$ *****</span
-                    ><span class="sr-only">valor sob consulta</span>
-                  </td>
                   <td>4 departamentos</td>
                   <td>3 workflows</td>
-                  <td>2 demos</td>
                 </tr>
                 <tr>
                   <th scope="row">Ampliado</th>
-                  <td>
-                    <span aria-hidden="true" class="price-masked">R$ *****</span
-                    ><span class="sr-only">valor sob consulta</span>
-                  </td>
                   <td>5 departamentos</td>
                   <td>4 workflows</td>
-                  <td>2 demos</td>
                 </tr>
                 <tr>
                   <th scope="row">Robusto</th>
-                  <td>
-                    <span aria-hidden="true" class="price-masked">R$ *****</span
-                    ><span class="sr-only">valor sob consulta</span>
-                  </td>
                   <td>6 departamentos</td>
                   <td>5 workflows</td>
-                  <td>3 demos</td>
                 </tr>
                 <tr>
                   <th scope="row">Avançado</th>
-                  <td>
-                    <span aria-hidden="true" class="price-masked">R$ *****</span
-                    ><span class="sr-only">valor sob consulta</span>
-                  </td>
                   <td>Mais de 6 departamentos</td>
                   <td>Mais de 5 workflows</td>
-                  <td>3 demos</td>
                 </tr>
               </tbody>
             </table>
@@ -239,8 +210,9 @@
 
           <p class="table-note">
             O valor investido na Auditoria pode ser abatido na fase de
-            Implementação, se você avançar logo em seguida — respeitando um
-            limite de até 10% do valor total da Implementação.
+            Implementação, se você avançar em até
+            <strong>30 dias</strong> após a entrega — respeitando um limite de
+            até 10% do valor total da Implementação.
           </p>
         </div>
       </section>
@@ -298,16 +270,28 @@
             <details>
               <summary>"Como funciona o abatimento do valor?"</summary>
               <p>
-                Se você avançar para a Implementação logo após a Auditoria, o
-                valor pago nela é abatido — respeitando um limite de até 10% do
-                valor total da Implementação.
+                Se você fechar a Implementação em até
+                <strong>30 dias</strong> após a entrega da Auditoria, o valor
+                pago nela é abatido — respeitando um limite de até 10% do valor
+                total da Implementação.
+              </p>
+              <p>
+                Na prática: numa Implementação de R$ 50.000, o abatimento vai
+                até R$ 5.000.
+                <strong
+                  >Se a Auditoria custou mais que esse limite, a diferença não é
+                  abatida</strong
+                >
+                — por isso o teto aparece aqui, e não só no contrato.
               </p>
             </details>
             <details>
               <summary>"Quanto tempo leva?"</summary>
               <p>
-                Entregável completo em até
-                <strong>10 dias úteis</strong> após briefing e acesso aos dados.
+                O entregável completo sai em
+                <strong>poucos dias úteis</strong> após o briefing e o acesso
+                aos dados. O prazo exato depende da faixa contratada e é
+                combinado na proposta.
               </p>
             </details>
           </div>

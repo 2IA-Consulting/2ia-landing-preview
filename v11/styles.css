@@ -1613,39 +1613,26 @@ strong {
 }
 
 /* .comparison nasceu para a tabela de duas colunas da /conversa/ e fixa 50% em
-   cada célula. A tabela de faixas tem cinco. */
-.comparison--pricing th,
-.comparison--pricing td {
+   cada célula. A tabela de faixas tem três. */
+.comparison--scope th,
+.comparison--scope td {
   width: auto;
   padding: 20px 24px;
 }
 
-.comparison--pricing th:first-child,
-.comparison--pricing td:first-child {
-  width: 15%;
+.comparison--scope th:first-child,
+.comparison--scope td:first-child {
+  width: 22%;
 }
 
-.comparison--pricing th:nth-child(2),
-.comparison--pricing td:nth-child(2) {
-  width: 17%;
-}
-
-.comparison--pricing td:last-child {
-  width: 16%;
-}
-
-.comparison--pricing tbody th {
+/* O nome da faixa é o cabeçalho da linha, mas é conteúdo, não rótulo: sem isto
+   herdaria o mono em caixa-alta dos cabeçalhos de coluna. */
+.comparison--scope tbody th {
   color: var(--paper);
   font-family: var(--display);
   font-size: 15px;
   letter-spacing: normal;
   text-transform: none;
-}
-
-.price-masked {
-  color: var(--terracotta);
-  font-family: var(--mono);
-  letter-spacing: 0.1em;
 }
 
 .comparison th a {
@@ -2266,35 +2253,27 @@ strong {
     content: "Auditoria Paga";
   }
 
-  /* A tabela de faixas tem cinco colunas: no empilhamento cada linha vira um
-     cartao com o nome da faixa por titulo, e cada celula recupera o proprio
-     cabecalho. Sem isto os valores empilhados perderiam o significado. */
-  .comparison--pricing tbody th {
+  /* No empilhamento cada faixa vira um cartao com o nome por titulo, e cada
+     celula recupera o proprio cabecalho — herdados de .comparison, eles diriam
+     "Conversa Gratuita"/"Auditoria Paga", que e a outra tabela. */
+  .comparison--scope tbody th {
     border-bottom: 1px solid var(--line);
     background: var(--surface-raised);
     padding: 16px 22px;
     text-align: left;
   }
 
-  .comparison--pricing th,
-  .comparison--pricing td {
+  .comparison--scope th,
+  .comparison--scope td {
     width: 100%;
   }
 
-  .comparison--pricing td:nth-of-type(1)::before {
-    content: "Investimento";
-  }
-
-  .comparison--pricing td:nth-of-type(2)::before {
+  .comparison--scope td:nth-of-type(1)::before {
     content: "Departamentos";
   }
 
-  .comparison--pricing td:nth-of-type(3)::before {
+  .comparison--scope td:nth-of-type(2)::before {
     content: "Workflows";
-  }
-
-  .comparison--pricing td:nth-of-type(4)::before {
-    content: "Demos";
   }
 
   .audit-hero h1 {
